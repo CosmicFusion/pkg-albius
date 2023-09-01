@@ -4,6 +4,11 @@ dpkg-sig --sign builder ./output/*.deb
 # Pull down existing ppa repo db files etc
 rsync -azP --exclude '*.deb' ferreo@direct.pika-os.com:/srv/www/pikappa/ ./output/repo
 
+# REPREPRO IS FUCKING DRUNK
+apt remove reprepro -y
+wget -nv https://launchpad.net/ubuntu/+archive/primary/+files/reprepro_5.3.0-1.4_amd64.deb
+apt install -y ./reprepro_5.3.0-1.4_amd64.deb
+
 # Add the new package to the repo
 reprepro -V -C main --basedir ./output/repo/ includedeb lunar ./output/*.deb
 
