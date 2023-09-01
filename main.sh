@@ -1,11 +1,11 @@
 #! /bin/bash
 
 # Clone Upstream
-git clone https://github.com/Vanilla-OS/apx-gui ./vanilla-apx-gui
-cd ./vanilla-apx-gui
+git clone https://github.com/Vanilla-OS/Albius ./albius
+cd ./albius
 rm -rfv debian/changelog
 touch debian/changelog
-echo -e "vanilla-apx-gui (1.0.2-99pika2.lunar) lunar; urgency=medium\n\n  * New Release\n\n -- Ward Nakchbandi <hotrod.master@hotmail.com> Sat, 01 Oct 2022 14:50:00 +0200" > debian/changelog
+echo -e "albius (0.2.10-99pika1.lunar) lunar; urgency=medium\n\n  * New Release\n\n -- Ward Nakchbandi <hotrod.master@hotmail.com> Sat, 01 Oct 2022 14:50:00 +0200" > debian/changelog
 
 
 # Get build deps
