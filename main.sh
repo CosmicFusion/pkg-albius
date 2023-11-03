@@ -5,7 +5,7 @@ git clone https://github.com/Vanilla-OS/Albius ./albius
 cd ./albius
 rm -rfv debian/changelog
 touch debian/changelog
-echo -e "albius (0.2.10-100pika) pikauwu; urgency=medium\n\n  * New Release\n\n -- Ward Nakchbandi <hotrod.master@hotmail.com> Sat, 01 Oct 2022 14:50:00 +0200" > debian/changelog
+echo -e "albius (0.2.11-100pika1) pikauwu; urgency=medium\n\n  * New Release\n\n -- Ward Nakchbandi <hotrod.master@hotmail.com> Sat, 01 Oct 2022 14:50:00 +0200" > debian/changelog
 
 
 # Get build deps
